@@ -1,0 +1,10 @@
+In workshop4, I used constructors, destructors and a reference of the current object. 
+
+The reason of using contructors is to initialize the class object. Constructors can have parameters, allowing values to be passed for initialzing member variables. If we don't define them, the compiler will provide default constructor which is initialize the member variables to their default values.
+
+Once we used contructors, we have to release allocated memory to prevent memory leaks. For this, we use destructor which is defined with a tilda symbol proceded by the class name. It can be called when the object goes out of the scope, or deleted using delete keyword, or when the program exits.
+
+The reference of the current object is a reference variable that points to the current object *this. To access the current object, we can use a pointer or a reference which is point to the object. By using a pointer or a reference to the object, it allows to modifying and returning the current object within member functions.
+
+
+I used reference of the current object in performing operations on the Canistor object. With 'this' pointer, I could access the current instance of the class. This allows me to manipulate the current object's attributes, such as setting content name, pouring contents, and comparing content name with other Canister objects. Especially returning a reference to the current object at the end of each function was unfamiliar to me. It helps sequential function calls on the same object and also improves the code's readabilty. 
